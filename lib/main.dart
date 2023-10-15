@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:notes/screens/home_page.dart';
 
 void main() {
-  runApp(NoteApp());
+  runApp(TheFinalApp());
 }
 
-class NoteApp extends StatelessWidget {
-  const NoteApp({super.key});
+class TheFinalApp extends StatelessWidget {
+  const TheFinalApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: {HomePage.id: (context) => HomePage()},
-      initialRoute: HomePage.id,
     );
   }
 }
